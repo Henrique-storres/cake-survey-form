@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Página Principal</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Henrique">
+        <meta name="description" content="Form project">
+        <meta name= "keywords" content="form, challenge">
+    </head>
+<body>
+
+    <header class="header">
+      <h1 id="title" class="text-center">Cake Survey Form</h1>
+      <p id="description" class="description text-center">Thank you for taking the time to help us improve your kind of cake</p>
+    </header>
+
+    <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+
+        <div class="form-group">
+          <p>Which option best describes your favorite type of cake?</p>
+          <select id="dropdown" name="cake" class="form-control" required>
+            <option disabled selected value>Select your favorite cake</option>
+            <option value="chocolate">Chocolate</option>
+            <option value="orange">Orange</option>
+            <option value="vanilla">Vanilla</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+    
+        <div class="form-group">
+          <p>Would you recommend our cakes to a friend?</p>
+
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Definitely</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Maybe</label
+          >
+    
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Not sure</label
+          >
+        </div>
+    
+        <div class="form-group">
+          <p>
+            What is your favorite feature of freeCodeCamp?
+          </p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="openSource">Open Source</option>
+          </select>
+        </div>
+    
+        <div class="form-group">
+          <p>
+            What new flavors would you like to see in our menu?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+    
+          <label
+            ><input
+              name="prefer"
+              value="white-chocolate"
+              type="checkbox"
+              class="input-checkbox"
+            />White Chocolate</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="strawberry"
+              type="checkbox"
+              class="input-checkbox"
+            />Strawberry</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="vegan-cake"
+              type="checkbox"
+              class="input-checkbox"
+            />Vegan Cake</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="blueberry"
+              type="checkbox"
+              class="input-checkbox"
+            />Blueberry</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="pineapple"
+              type="checkbox"
+              class="input-checkbox"
+            />Pineapple</label
+          >
+        </div>
+    
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+    
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+</body>
+</html>
